@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="formulario1.html" method="get">
+        <label for="txtNombre">Nombre: </label>
+        <input id="txtNombre" name="txtNombre" type="text" required placeholder="Nombre y Apellido" maxlength="40" />
+        <br />
+        <label for="intEdad">Edad: </label>
+        <input id="intEdad" name="intEdad" type="number" min="0" max="150" required placeholder="0-150 años" />
+        <br />
+        <label for="txtEmail">Email: </label>
+        <input id="txtEmail" name="txtEmail" type="email" required placeholder="correo@electron.co" />
+        <br />
+        <label for="txtPhone">Telefono: </label>
+        <input id="txtPhone" name="txtPhone" type="text" required
+            placeholder="+(504) 0000-0000"
+            pattern="/^\+?\(?(\d{3})?\)?\s?([2389]\d{3})\-?(\d{4})$/g"/>
+        <br />
+        <label for="txtPswd">Contraseña: </label>
+        <input id="txtPswd" name="txtPswd" type="password" required />
+        <br />
+        <fieldset>
+            <legend>Color Predeterminado:</legend>
+            <label for="optAzul">Azul</label>
+            <input type="radio" id="optAzul" name="color" value="blue" checked />
+            &nbsp;
+            <label for="optRojo">Rojo</label>
+            <input type="radio" id="optRojo" name="color" value="red" />
+            &nbsp;
+            <label for="optVerde">Verde</label>
+            <input type="radio" id="optVerde" name="color" value="green" />
+        </fieldset>
+        <fieldset>
+            <legend>Color Secundario:</legend>
+            <label for="optAzul1">Azul</label>
+            <input type="radio" id="optAzul1" name="color2" value="blue" checked />
+            &nbsp;
+            <label for="optRojo1">Rojo</label>
+            <input type="radio" id="optRojo1" name="color2" value="red" />
+            &nbsp;
+            <label for="optVerde1">Verde</label>
+            <input type="radio" id="optVerde1" name="color2" value="green" />
+        </fieldset>
+        <fieldset>
+            <legend>Temas</legend>
+            <label for="chkInfo">Informatica</label>
+            <input type="checkbox" name="chkInfo" id="chkInfo" value="1" checked /> &nbsp;
+            <label for="chkMate">Matematicas</label>
+            <input type="checkbox" name="chkMate" id="chkMate" value="1" checked /> &nbsp;
+            <label for="chkEstad">Estadistica</label>
+            <input type="checkbox" name="chkEstad" id="chkEstad" value="1" checked />
+        </fieldset>
+        <label for="cmbPais">País</label>
+        <select id="cmbPais" name="cmbPais">
+            <optgroup label="América">
+                <option value="HN">Honduras</option>
+                <option value="CR">Costa Rica</option>
+                <option value="US">Estado Unidos</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="ES" selected>España</option>
+                <option value="EN">Inglaterra</option>
+            </optgroup>
+        </select>
+        <br />
+
+        <label for="cmbPais2">País</label>
+        <select id="cmbPais2" name="cmbPais2" multiple>
+            <optgroup label="América">
+                <option value="HN">Honduras</option>
+                <option value="CR">Costa Rica</option>
+                <option value="US">Estado Unidos</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="ES" selected>España</option>
+                <option value="EN">Inglaterra</option>
+            </optgroup>
+        </select>
+        <br />
+        <label for="txtLongText">Texto Largo</label><br/>
+        <textarea id="txtLongText"
+            name="txtLongText"
+            placeholder="Un texto muy muy largo"
+            cols="60"
+            rows="7"
+        ></textarea>
+        <br/>
+        <button type="submit" name="btnEnviar" value="Enviar">
+            Enviar
+        </button>
+        <button type="submit" name="btnProcesar" value="Procesar">
+            Procesar Datos
+        </button>
+    </form>
+</body>
+
+</html>

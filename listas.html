@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas</title>
+</head>
+<body>
+    <!-- Listas Ordenadas en HTML  ordered lists (ol) -->
+    <ol>
+        <li>Oro</li>
+        <li>Plata</li>
+        <li>Bronce</li>
+    </ol>
+    <!-- Listas No Ordenadas unordered lists (ul)-->
+    <!-- List Item (li)-->
+    <ul>
+        <li>Piña</li>
+        <li>Coco</li>
+        <li>Otros</li>
+        <li>Hielo</li>
+    </ul>
+    <table border="2">
+        <tr><!-- table row -->
+            <th>Pais</th>
+            <!-- th table heading celda de
+                encabezado -->
+            <th>Exportaciones</th>
+            <th>Clima</th>
+        </tr>
+        <tr>
+            <th>HND</th>
+            <!-- td table data | celda de datos-->
+            <td>100</td>
+            <td>Tropical</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>854</td>
+            <td>Templado</td>
+        </tr>
+        <tr>
+            <th>ARG</th>
+            <td>500</td>
+            <td>Templado</td>
+        </tr>
+    </table>
+
+    <!-- Tabla Encabezado, Cuerpo, Pie de Pagina-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Listado de Ciudades 2023</th>
+            </tr>
+            <tr>
+                <th>Ciudad</th>
+                <th>Departamento</th>
+                <th>Zona</th>
+                <th>Ventas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tegucigalpa</td>
+                <td>Francisco Morazan</td>
+                <td>Centro</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>San Pedro Sula</td>
+                <td>Cortes</td>
+                <td>Norte</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>Choluteca</td>
+                <td>Choluteca</td>
+                <td>Sur</td>
+                <td rowspan="2">900</td>
+            </tr>
+            <tr>
+                <td>Santa Rosa de Copan</td>
+                <td>Copan</td>
+                <td>Occidente</td>
+            </tr>
+            <tr>
+                <td>Danli</td>
+                <td>El Paraiso</td>
+                <td>Oriente</td>
+                <td>700</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    Derechos de Autor &copy; 2023
+                </td>
+                <th>
+                    7600
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
