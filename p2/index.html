@@ -46,7 +46,9 @@
                 <div class="body">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel repellendus omnis reiciendis id
                         pariatur veritatis a exercitationem deleniti, ea veniam voluptatibus, expedita eum provident
-                        nobis nisi. Ducimus, molestiae aspernatur. Loaidfklkjaasdflkjljlasdlfkalksdflakdslkfjalsjdflakdslfkjalsdkjflakjdslfkjalsdkjflakjdslfkalsdkjflaksdjflkajdslfkjalsdkjflasjdlfjaldskj</p>
+                        nobis nisi. Ducimus, molestiae aspernatur.
+                        Loaidfklkjaasdflkjljlasdlfkalksdflakdslkfjalsjdflakdslfkjalsdkjflakjdslfkjalsdkjflakjdslfkalsdkjflaksdjflkajdslfkjalsdkjflasjdlfjaldskj
+                    </p>
                 </div>
             </div>
             <div class="card">
@@ -115,6 +117,19 @@
                 </div>
             </div>
         </section>
+        <section class="contact-form">
+            <form action="" method="post" class="row fullwidth flex-center">
+                <section class="col-6 col-6-m col-4-l">
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre" />
+                    <label for="txtEmail">Email</label>
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Email" />
+                    <label for="txtMensaje">Mensaje</label>
+                    <textarea name="txtMensaje" id="txtMensaje" cols="30" rows="10"></textarea>
+                    <button type="submit" name="btnEnviar">Enviar</button>
+                </section>
+            </form>
+        </section>
     </main>
     <footer>
         <section>
@@ -122,6 +137,19 @@
             <span>&copy;Todos los Derechos Reservados 2023 PW</span>
         </section>
     </footer>
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
