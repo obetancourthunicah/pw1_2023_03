@@ -1,0 +1,38 @@
+.bloque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+    align-items: center;
+    flex-direction: row;
+}
+.asignatura {
+    max-width: 320px;
+    background-color: beige;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px #000;
+    transition: background-color 0.5s ease;
+}
+
+.asignatura h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.asignatura p {
+    font-size: 0.8rem;
+}
+
+.asignatura.isRequired {
+    background-color: blueviolet;
+}
+
+.asignatura.opens {
+    background-color: green;
+}
+
+.asignatura.focus {
+    background-color: #00e5ff;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Javascript en HTML</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+           /// alert("Se cargó el DOM");
+            const htmlCards = document.querySelectorAll('section div');
+            htmlCards.forEach((card, index) => {
+                card.addEventListener('click', ()=>{
+                    ///alert(`Se hizo click en la tarjeta ${index + 1}`);
+                });
+            });
+        });
+    </script>
+    <script src="planDeEstudio.js"></script>
+    <link rel="stylesheet" href="planEstudio.css">
+</head>
+<body>
+    <h1>Uso de Javascript en HTML</h1>
+    <p>Este es un ejemplo de uso de Javascript en HTML</p>
+    <section>
+        <div>
+            <img src="https://picsum.photos/300/220" alt="Imagen de ejemplo" />
+            <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam. Suscipit, excepturi. Est veritatis cumque molestiae, corporis aut rerum ipsam optio non quaerat atque sapiente. Tempore numquam iste error ipsum?</p>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/220" alt="Imagen de ejemplo" />
+            <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam. Suscipit, excepturi. Est veritatis cumque molestiae, corporis aut rerum ipsam optio non quaerat atque sapiente. Tempore numquam iste error ipsum?</p>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/220" alt="Imagen de ejemplo" />
+            <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam. Suscipit, excepturi. Est veritatis cumque molestiae, corporis aut rerum ipsam optio non quaerat atque sapiente. Tempore numquam iste error ipsum?</p>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/220" alt="Imagen de ejemplo" />
+            <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquam. Suscipit, excepturi. Est veritatis cumque molestiae, corporis aut rerum ipsam optio non quaerat atque sapiente. Tempore numquam iste error ipsum?</p>
+        </div>
+    </section>
+    <section>
+        <div class="bloque">
+            <div id="if101" class="asignatura" data-requisitos="mt101" data-opens="es101">
+                <h2>Asignatura 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="mt101" class="asignatura">
+                <h2>Asignatura 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="es101" class="asignatura">
+                <h2>Asignatura 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="fi101" class="asignatura" data-requisitos="mt101,sc101">
+                <h2>Asignatura 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="sc101" class="asignatura">
+                <h2>Asignatura 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
